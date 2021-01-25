@@ -1,2 +1,2 @@
-# Web-Scraping-SmarPhone
+# Web-Scraping-SmartPhone
  
