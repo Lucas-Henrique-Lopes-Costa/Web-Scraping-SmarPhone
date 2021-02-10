@@ -20,10 +20,10 @@ limit = len(containers)
 title_container = page_soup.findAll("a", {"class" : "name"}, limit=limit) # pegando o que eu quero
 price_container = page_soup.findAll("span", {"class" : "mainValue"})
 
-filename = "Telefones.csv"
+filename = "SmartPhones.csv"
 f = open(filename, "w")
 
-headers = "Modelo; Preço\n"
+headers = "Model, Price\n"
 
 f.write(headers)
 
@@ -34,5 +34,5 @@ for container in range(0, limit):
     print("\n" + "Tílulo: " + title)
     print("Preço: " + price)
 
-    f.write(title + ";" + price + "\n")
+    f.write(title + "," + price + "\n")
 f.close()
